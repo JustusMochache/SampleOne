@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_image_snack"
+        android:layout_width="152dp"
+        android:layout_height="154dp"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chapati"
+        android:id="@+id/item_name_snack"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/item_image_snack"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="36sp"
+        />
+    <TextView
+        android:id="@+id/snack_price_ksh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name_snack"
+        android:text="@string/ksh"
+        android:textSize="24sp"
+        android:layout_marginStart="8sp"
+        android:layout_toRightOf="@id/item_image_snack" />
+    <TextView
+        android:id="@+id/actual_price_ksh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/snack_price_ksh"
+        android:text="10"
+        android:layout_below="@id/item_name_snack"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/snack_price_ksh"
+        android:background="#FFFF"
+       android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

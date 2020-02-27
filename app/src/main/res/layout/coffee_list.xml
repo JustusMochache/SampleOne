@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:src="@mipmap/ic_launcher_round"
+        android:id="@+id/food_display"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee"
+        android:id="@+id/food_item"
+        android:layout_marginBottom="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:layout_toEndOf="@id/food_display"
+        android:layout_marginStart="24sp"/>
+    <TextView
+        android:id="@+id/inhouseText"
+        android:layout_marginStart="16sp"
+        android:layout_marginBottom="12sp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In house: "
+        android:layout_toRightOf="@id/food_display"
+        android:layout_below="@id/food_item"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12sp"
+        android:textSize="16sp"
+        android:id="@+id/inhousePrice"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:layout_toEndOf="@id/inhouseText"
+        android:text="Ksh. 10"
+        android:layout_below="@id/food_item"
+        android:layout_marginStart="4sp" />
+
+    <TextView
+        android:id="@+id/takeAwayText"
+        android:textSize="16sp"
+        android:layout_marginBottom="12sp"
+        android:layout_marginStart="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Away"
+        android:layout_toRightOf="@id/food_display"
+        android:layout_below="@id/inhouseText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/priceTakeAway"
+        android:layout_marginBottom="12sp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:layout_toEndOf="@id/takeAwayText"
+        android:text="Ksh.20"
+        android:layout_below="@id/inhousePrice"
+        android:layout_marginStart="4sp" />
+
+    <TextView
+        android:id="@+id/extraShotText"
+        android:layout_marginStart="16sp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Shot: "
+        android:layout_toRightOf="@id/food_display"
+        android:layout_below="@id/takeAwayText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/price_extra_shot"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:layout_toEndOf="@id/takeAwayText"
+        android:text="KSH 30"
+        android:layout_below="@id/priceTakeAway"
+        android:layout_marginStart="4sp" />
+    <Button
+        android:id="@+id/order_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/food_display"
+        android:background="#FFFF"
+        android:text="@string/order"
+        android:textColor="@color/colorAccent"/>
+
+
+
+
+
+</RelativeLayout>

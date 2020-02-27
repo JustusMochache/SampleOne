@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_icecream"
+        android:icon="@drawable/ice"
+        android:title="Ice Cream" />
+    <item
+        android:id="@+id/navigation_coffee"
+        android:icon="@drawable/cof"
+        android:title="Coffee" />
+    <item
+        android:id="@+id/navigation_snacks"
+        android:icon="@drawable/food"
+        android:title="Snacks" />
+</menu>
